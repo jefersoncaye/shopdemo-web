@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { CarrinhoProvider } from './context/CarrinhoContext';
 import { Layout } from './components/Layout';
@@ -12,7 +12,7 @@ import { Confirmacao } from './pages/Confirmacao';
 
 export function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <CarrinhoProvider>
           <Layout>
@@ -62,7 +62,7 @@ export function App() {
           </Layout>
         </CarrinhoProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
