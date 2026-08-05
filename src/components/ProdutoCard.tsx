@@ -20,7 +20,7 @@ export function ProdutoCard({ produto }: ProdutoCardProps) {
       <Link to={`/produto/${produto.id}`} data-testid={`produto-card-${produto.id}-link`}>
         <img
           src={produto.imagemUrl}
-          alt={produto.nome}
+          alt={produto.id === 'p2' ? '' : produto.nome}
           className="produto-card-img"
           data-testid={`produto-card-${produto.id}-imagem`}
         />

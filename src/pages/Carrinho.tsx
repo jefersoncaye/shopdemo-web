@@ -103,10 +103,9 @@ export function Carrinho() {
                 setErroEstoque(null);
                 removerItem(item.produto.id);
               }}
-              aria-label={`Remover ${item.produto.nome}`}
               data-testid={`carrinho-item-${item.produto.id}-remover-button`}
             >
-              ✕
+              <span aria-hidden="true">✕</span>
             </button>
           </div>
         ))}

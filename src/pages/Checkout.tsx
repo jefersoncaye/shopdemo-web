@@ -234,7 +234,7 @@ export function Checkout() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="numero-cartao">Número do cartão</label>
+            <label htmlFor="numero-cartao-label">Número do cartão</label>
             <input
               id="numero-cartao"
               type="text"
